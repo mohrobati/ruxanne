@@ -1,0 +1,7 @@
+Commit,File,Scope
+https://github.com/alacritty/alacritty/commit/62c1d999e1361fc68ee4e54865b205415fa0a38d,event_loop.rs,0-Struct
+https://github.com/nushell/nushell/commit/4be88ff572f631df0f8b571e85c60d30eb9f248c,traits.rs,0-Struct
+https://github.com/SergioBenitez/Rocket/commit/fa3e0334c1dcbbc91f63375906aaab72e5bafe59,encoding.rs,2-Struct
+https://github.com/xi-editor/xi-editor/commit/5a9f9335eb2aeff4512416618614db5fd0b5e49e,spans.rs,3-Struct
+https://github.com/yewstack/yew/commit/ac3af0a9bcdd816d28422fe61a0f155b16d2bad0,app_handle.rs,0-Struct
+https://github.com/yewstack/yew/commit/f50c8c3cbabb5b65fb52f3e7d29e72d631b976e5,link.rs,0-Struct

@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>RQ1 Experiments</title>
+<script>
+function submit() {
+let results = []
+Array.from(document.getElementsByClassName('input')).forEach((el) => results.push(el.value))
+navigator.clipboard.writeText(results.join(","));
+}
+</script>
+</head>
+<body style="background-color:black; color:white; font-size: 1.2em">
+
+<br><br>DP#1: <a target="_blank" href="https://github.com/tokio-rs/tokio/commit/a8500632113a527780fb9c756e3d8b8a85d0f754">Link</a>
+<h3>File: registration.rs</h2>
+<h3>Scope: 3-Impl</h3>
+<img src="./visualization/tokio-rs_tokio/a8500632113a527780fb9c756e3d8b8a85d0f754/registration.rs_3-Impl.png">
+
+<br><br><img src="./screenshots/1.png">
+
+<br><br>Select the rank? <select class="input"><option value="-">-</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value=">5">>5</option></select><br><br><br><br>
+<br><br>DP#2: <a target="_blank" href="https://github.com/nushell/nushell/commit/2b37ae3e81b54e3128cc6e3f05f27525f6974082">Link</a>
+<h3>File: external.rs</h2>
+<h3>Scope: 1-Fn</h3>
+<img src="./visualization/nushell_nushell/2b37ae3e81b54e3128cc6e3f05f27525f6974082/external.rs_1-Fn.png">
+
+<br><br><img src="./screenshots/2.png">
+
+<br><br>Select the rank? <select class="input"><option value="-">-</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value=">5">>5</option></select><br><br><br><br>
+<br><br>DP#3: <a target="_blank" href="https://github.com/denoland/deno/commit/dccf5e0c5c7f04409809104dd23472bcc058e170">Link</a>
+<h3>File: runtime.rs</h2>
+<h3>Scope: 4-Struct</h3>
+<img src="./visualization/denoland_deno/dccf5e0c5c7f04409809104dd23472bcc058e170/runtime.rs_4-Struct.png">
+
+<br><br><img src="./screenshots/3.png">
+
+<br><br>Select the rank? <select class="input"><option value="-">-</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value=">5">>5</option></select><br><br><br><br>
+<br><br>DP#4: <a target="_blank" href="https://github.com/swc-project/swc/commit/dba90eae875bbaec9911c6dd72d482b75de77982">Link</a>
+<h3>File: tests.rs</h2>
+<h3>Scope: 54-Fn</h3>
+<img src="./visualization/swc-project_swc/dba90eae875bbaec9911c6dd72d482b75de77982/tests.rs_54-Fn.png">
+
+<br><br><img src="./screenshots/4.png">
+
+<br><br>Select the rank? <select class="input"><option value="-">-</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value=">5">>5</option></select><br><br><br><br>
+<br><br>DP#5: <a target="_blank" href="https://github.com/yewstack/yew/commit/78d4204a9a52a826bd2be4e7383d29e04233fb5b">Link</a>
+<h3>File: lifecycle.rs</h2>
+<h3>Scope: 0-Struct</h3>
+<img src="./visualization/yewstack_yew/78d4204a9a52a826bd2be4e7383d29e04233fb5b/lifecycle.rs_0-Struct.png">
+
+<br><br><img src="./screenshots/5.png">
+
+<br><br>Select the rank? <select class="input"><option value="-">-</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value=">5">>5</option></select><br><br><br><br>
+<br><br>DP#6: <a target="_blank" href="https://github.com/meilisearch/meilisearch/commit/6ef73eb2262e12ad84ea7df26735954969afb342">Link</a>
+<h3>File: settings.rs</h2>
+<h3>Scope: 2-Macro</h3>
+<img src="./visualization/meilisearch_meilisearch/6ef73eb2262e12ad84ea7df26735954969afb342/settings.rs_2-Macro.png">
+
+<br><br><img src="./screenshots/6.png">
+
+<br><br>Select the rank? <select class="input"><option value="-">-</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value=">5">>5</option></select><br><br><br><br>
+<br><br>DP#7: <a target="_blank" href="https://github.com/nushell/nushell/commit/d9d956e54f45d5eab47359d483dbead17ebd4ed1">Link</a>
+<h3>File: config.rs</h2>
+<h3>Scope: 1-Fn</h3>
+<img src="./visualization/nushell_nushell/d9d956e54f45d5eab47359d483dbead17ebd4ed1/config.rs_1-Fn.png">
+
+<br><br><img src="./screenshots/7.png">
+
+<br><br>Select the rank? <select class="input"><option value="-">-</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value=">5">>5</option></select><br><br><br><br>
+<br><br>DP#8: <a target="_blank" href="https://github.com/nushell/nushell/commit/22469a9cb1486a07e5c0989e38e071f944f346a3">Link</a>
+<h3>File: cp.rs</h2>
+<h3>Scope: 0-Impl</h3>
+<img src="./visualization/nushell_nushell/22469a9cb1486a07e5c0989e38e071f944f346a3/cp.rs_0-Impl.png">
+
+<br><br><img src="./screenshots/8.png">
+
+<br><br>Select the rank? <select class="input"><option value="-">-</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value=">5">>5</option></select><br><br><br><br>
+<br><br>DP#9: <a target="_blank" href="https://github.com/yewstack/yew/commit/f18eca18600b2d5f1a52aa9c35a705a84c18897f">Link</a>
+<h3>File: html-component-fail.rs</h2>
+<h3>Scope: 0-Fn</h3>
+<img src="./visualization/yewstack_yew/f18eca18600b2d5f1a52aa9c35a705a84c18897f/html-component-fail.rs_0-Fn.png">
+
+<br><br><img src="./screenshots/9.png">
+
+<br><br>Select the rank? <select class="input"><option value="-">-</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value=">5">>5</option></select><br><br><br><br>
+<br><br>DP#10: <a target="_blank" href="https://github.com/denoland/deno/commit/e5beb800c94099852964d482a32a13f5c29ec147">Link</a>
+<h3>File: http_bench_json_ops.rs</h2>
+<h3>Scope: 4-Fn</h3>
+<img src="./visualization/denoland_deno/e5beb800c94099852964d482a32a13f5c29ec147/http_bench_json_ops.rs_4-Fn.png">
+
+<br><br><img src="./screenshots/10.png">
+
+<br><br>Select the rank? <select class="input"><option value="-">-</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value=">5">>5</option></select><br><br><br><br>
+<br><br>DP#11: <a target="_blank" href="https://github.com/firecracker-microvm/firecracker/commit/d8753570734d91e4f702f4649fd699cf741e091b">Link</a>
+<h3>File: struct_util.rs</h2>
+<h3>Scope: 0-Enum</h3>
+<img src="./visualization/firecracker-microvm_firecracker/d8753570734d91e4f702f4649fd699cf741e091b/struct_util.rs_0-Enum.png">
+
+<br><br><img src="./screenshots/11.png">
+
+<br><br>Select the rank? <select class="input"><option value="-">-</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value=">5">>5</option></select><br><br><br><br>
+<br><br>DP#12: <a target="_blank" href="https://github.com/swc-project/swc/commit/af4cbbae23a948d4339e14b4ce28d1fbbb18134b">Link</a>
+<h3>File: es2015_destructuring.rs</h2>
+<h3>Scope: 52-Macro</h3>
+<img src="./visualization/swc-project_swc/af4cbbae23a948d4339e14b4ce28d1fbbb18134b/es2015_destructuring.rs_52-Macro.png">
+
+<br><br><img src="./screenshots/12.png">
+
+<br><br>Select the rank? <select class="input"><option value="-">-</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value=">5">>5</option></select><br><br><br><br>
+<br><br>DP#13: <a target="_blank" href="https://github.com/swc-project/swc/commit/f258ee4729ccd007b43b1a08d77359d99f53ca87">Link</a>
+<h3>File: value.rs</h2>
+<h3>Scope: 22-Struct</h3>
+<img src="./visualization/swc-project_swc/f258ee4729ccd007b43b1a08d77359d99f53ca87/value.rs_22-Struct.png">
+
+<br><br><img src="./screenshots/13.png">
+
+<br><br>Select the rank? <select class="input"><option value="-">-</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value=">5">>5</option></select><br><br><br><br>
+<br><br>DP#14: <a target="_blank" href="https://github.com/denoland/deno/commit/f530189c500b9f12c4c94e88eca23eab9ae0d970">Link</a>
+<h3>File: watcher_tests.rs</h2>
+<h3>Scope: 19-Fn</h3>
+<img src="./visualization/denoland_deno/f530189c500b9f12c4c94e88eca23eab9ae0d970/watcher_tests.rs_19-Fn.png">
+
+<br><br><img src="./screenshots/14.png">
+
+<br><br>Select the rank? <select class="input"><option value="-">-</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value=">5">>5</option></select><br><br><br><br>
+<br><br>DP#15: <a target="_blank" href="https://github.com/tauri-apps/tauri/commit/4d38f2e2b408a74a8da373529c3aba605110dc19">Link</a>
+<h3>File: error.rs</h2>
+<h3>Scope: 0-Enum</h3>
+<img src="./visualization/tauri-apps_tauri/4d38f2e2b408a74a8da373529c3aba605110dc19/error.rs_0-Enum.png">
+
+<br><br><img src="./screenshots/15.png">
+
+<br><br>Select the rank? <select class="input"><option value="-">-</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value=">5">>5</option></select><br><br><br><br>
+<br><br>DP#16: <a target="_blank" href="https://github.com/denoland/deno/commit/b17a5fbcfaaeb70f8876ce4ca09fdcc61f7e825c">Link</a>
+<h3>File: build.rs</h2>
+<h3>Scope: 1-Fn</h3>
+<img src="./visualization/denoland_deno/b17a5fbcfaaeb70f8876ce4ca09fdcc61f7e825c/build.rs_1-Fn.png">
+
+<br><br><img src="./screenshots/16.png">
+
+<br><br>Select the rank? <select class="input"><option value="-">-</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value=">5">>5</option></select><br><br><br><br>
+<br><br>DP#17: <a target="_blank" href="https://github.com/firecracker-microvm/firecracker/commit/a6d6645b8e3ea6c56ad173cc05a7559aa2b29056">Link</a>
+<h3>File: layout.rs</h2>
+<h3>Scope: 5-Const</h3>
+<img src="./visualization/firecracker-microvm_firecracker/a6d6645b8e3ea6c56ad173cc05a7559aa2b29056/layout.rs_5-Const.png">
+
+<br><br><img src="./screenshots/17.png">
+
+<br><br>Select the rank? <select class="input"><option value="-">-</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value=">5">>5</option></select><br><br><br><br>
+<br><br>DP#18: <a target="_blank" href="https://github.com/denoland/deno/commit/36fde75d779078118af3b2b6c078bcbfb47b1a0f">Link</a>
+<h3>File: flags.rs</h2>
+<h3>Scope: 49-Fn</h3>
+<img src="./visualization/denoland_deno/36fde75d779078118af3b2b6c078bcbfb47b1a0f/flags.rs_49-Fn.png">
+
+<br><br><img src="./screenshots/18.png">
+
+<br><br>Select the rank? <select class="input"><option value="-">-</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value=">5">>5</option></select><br><br><br><br>
+<br><br>DP#19: <a target="_blank" href="https://github.com/sharkdp/fd/commit/af9d8082a1be2a560c3a85ca8c7b71828ccdf31b">Link</a>
+<h3>File: main.rs</h2>
+<h3>Scope: 0-Fn</h3>
+<img src="./visualization/sharkdp_fd/af9d8082a1be2a560c3a85ca8c7b71828ccdf31b/main.rs_0-Fn.png">
+
+<br><br><img src="./screenshots/19.png">
+
+<br><br>Select the rank? <select class="input"><option value="-">-</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value=">5">>5</option></select><br><br><br><br>
+<br><br>DP#20: <a target="_blank" href="https://github.com/yewstack/yew/commit/e68060afa7421149f2d6aacace67c65c33e81fe5">Link</a>
+<h3>File: html_component.rs</h2>
+<h3>Scope: 2-Struct</h3>
+<img src="./visualization/yewstack_yew/e68060afa7421149f2d6aacace67c65c33e81fe5/html_component.rs_2-Struct.png">
+
+<br><br><img src="./screenshots/20.png">
+
+<br><br>Select the rank? <select class="input"><option value="-">-</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value=">5">>5</option></select><br><br><br><br>
+<br><br>DP#21: <a target="_blank" href="https://github.com/starship/starship/commit/ba40ad5ce6efc7949f28c2fd3435fad71d841c91">Link</a>
+<h3>File: mod.rs</h2>
+<h3>Scope: 0-Enum</h3>
+<img src="./visualization/starship_starship/ba40ad5ce6efc7949f28c2fd3435fad71d841c91/mod.rs_0-Enum.png">
+
+<br><br><img src="./screenshots/21.png">
+
+<br><br>Select the rank? <select class="input"><option value="-">-</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value=">5">>5</option></select><br><br><br><br>
+<br><br>DP#22: <a target="_blank" href="https://github.com/starship/starship/commit/bca4a7079f0bd663b8cc4584dc92388ce6799c1f">Link</a>
+<h3>File: print.rs</h2>
+<h3>Scope: 0-Fn</h3>
+<img src="./visualization/starship_starship/bca4a7079f0bd663b8cc4584dc92388ce6799c1f/print.rs_0-Fn.png">
+
+<br><br><img src="./screenshots/22.png">
+
+<br><br>Select the rank? <select class="input"><option value="-">-</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value=">5">>5</option></select><br><br><br><br>
+<br><br>DP#23: <a target="_blank" href="https://github.com/alacritty/alacritty/commit/7f1c1efe474851a129e4a2e5bc012d9b76ed2ed0">Link</a>
+<h3>File: grid.rs</h2>
+<h3>Scope: 5-Macro</h3>
+<img src="./visualization/alacritty_alacritty/7f1c1efe474851a129e4a2e5bc012d9b76ed2ed0/grid.rs_5-Macro.png">
+
+<br><br><img src="./screenshots/23.png">
+
+<br><br>Select the rank? <select class="input"><option value="-">-</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value=">5">>5</option></select><br><br><br><br>
+<br><br>DP#24: <a target="_blank" href="https://github.com/rustdesk/rustdesk/commit/b4f61c735ef6246eebda773954ef8ac0528897c2">Link</a>
+<h3>File: macos.rs</h2>
+<h3>Scope: 10-Fn</h3>
+<img src="./visualization/rustdesk_rustdesk/b4f61c735ef6246eebda773954ef8ac0528897c2/macos.rs_10-Fn.png">
+
+<br><br><img src="./screenshots/24.png">
+
+<br><br>Select the rank? <select class="input"><option value="-">-</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value=">5">>5</option></select><br><br><br><br>
+<br><br>DP#25: <a target="_blank" href="https://github.com/meilisearch/meilisearch/commit/f078cbac4d0e4a97eb99ac0ae19e426ad71c2e15">Link</a>
+<h3>File: error.rs</h2>
+<h3>Scope: 0-Impl</h3>
+<img src="./visualization/meilisearch_meilisearch/f078cbac4d0e4a97eb99ac0ae19e426ad71c2e15/error.rs_0-Impl.png">
+
+<br><br><img src="./screenshots/25.png">
+
+<br><br>Select the rank? <select class="input"><option value="-">-</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value=">5">>5</option></select><br><br><br><br>
+<br><br>DP#26: <a target="_blank" href="https://github.com/tauri-apps/tauri/commit/85674d4fe6a2453ce969d6a75b6528f3c89bf1d1">Link</a>
+<h3>File: ios_bundle.rs</h2>
+<h3>Scope: 1-Fn</h3>
+<img src="./visualization/tauri-apps_tauri/85674d4fe6a2453ce969d6a75b6528f3c89bf1d1/ios_bundle.rs_1-Fn.png">
+
+<br><br><img src="./screenshots/26.png">
+
+<br><br>Select the rank? <select class="input"><option value="-">-</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value=">5">>5</option></select><br><br><br><br>
+<br><br>DP#27: <a target="_blank" href="https://github.com/meilisearch/meilisearch/commit/a45cc4b6189c2eb40758b9749c3d1c8b19b88d40">Link</a>
+<h3>File: sum_of_words_position.rs</h2>
+<h3>Scope: 0-Fn</h3>
+<img src="./visualization/meilisearch_meilisearch/a45cc4b6189c2eb40758b9749c3d1c8b19b88d40/sum_of_words_position.rs_0-Fn.png">
+
+<br><br><img src="./screenshots/27.png">
+
+<br><br>Select the rank? <select class="input"><option value="-">-</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value=">5">>5</option></select><br><br><br><br>
+<br><br>DP#28: <a target="_blank" href="https://github.com/alacritty/alacritty/commit/5f7885749c4d7e48869b1fc0be4d430601cdbbfa">Link</a>
+<h3>File: grid.rs</h2>
+<h3>Scope: 13-Impl</h3>
+<img src="./visualization/alacritty_alacritty/5f7885749c4d7e48869b1fc0be4d430601cdbbfa/grid.rs_13-Impl.png">
+
+<br><br><img src="./screenshots/28.png">
+
+<br><br>Select the rank? <select class="input"><option value="-">-</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value=">5">>5</option></select><br><br><br><br>
+<br><br>DP#29: <a target="_blank" href="https://github.com/tokio-rs/tokio/commit/8198ef38814c45f9dc02fcbf826225b5cf32a6bb">Link</a>
+<h3>File: harness.rs</h2>
+<h3>Scope: 1-Impl</h3>
+<img src="./visualization/tokio-rs_tokio/8198ef38814c45f9dc02fcbf826225b5cf32a6bb/harness.rs_1-Impl.png">
+
+<br><br><img src="./screenshots/29.png">
+
+<br><br>Select the rank? <select class="input"><option value="-">-</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value=">5">>5</option></select><br><br><br><br>
+<br><br>DP#30: <a target="_blank" href="https://github.com/starship/starship/commit/af43aeefba1cc12044f05a09a8b6f0ae309a556c">Link</a>
+<h3>File: time.rs</h2>
+<h3>Scope: 1-Fn</h3>
+<img src="./visualization/starship_starship/af43aeefba1cc12044f05a09a8b6f0ae309a556c/time.rs_1-Fn.png">
+
+<br><br><img src="./screenshots/30.png">
+
+<br><br>Select the rank? <select class="input"><option value="-">-</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value=">5">>5</option></select><br><br><br><br>
+<br><br>DP#31: <a target="_blank" href="https://github.com/swc-project/swc/commit/9ba68c68639916b48b79ad831e3cf69d7b0c8051">Link</a>
+<h3>File: typescript.rs</h2>
+<h3>Scope: 6-Fn</h3>
+<img src="./visualization/swc-project_swc/9ba68c68639916b48b79ad831e3cf69d7b0c8051/typescript.rs_6-Fn.png">
+
+<br><br><img src="./screenshots/31.png">
+
+<br><br>Select the rank? <select class="input"><option value="-">-</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value=">5">>5</option></select><br><br><br><br>
+<br><br>DP#32: <a target="_blank" href="https://github.com/AppFlowy-IO/AppFlowy/commit/420b8ca05dcc27a50158bbddb08ec78b05cea0c4">Link</a>
+<h3>File: grid.rs</h2>
+<h3>Scope: 19-Impl</h3>
+<img src="./visualization/AppFlowy-IO_AppFlowy/420b8ca05dcc27a50158bbddb08ec78b05cea0c4/grid.rs_19-Impl.png">
+
+<br><br><img src="./screenshots/32.png">
+
+<br><br>Select the rank? <select class="input"><option value="-">-</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value=">5">>5</option></select><br><br><br><br>
+<br><br>DP#33: <a target="_blank" href="https://github.com/yewstack/yew/commit/c9deba05f13eac459f00198f878f272fc369516e">Link</a>
+<h3>File: mod.rs</h2>
+<h3>Scope: 0-Fn</h3>
+<img src="./visualization/yewstack_yew/c9deba05f13eac459f00198f878f272fc369516e/mod.rs_0-Fn.png">
+
+<br><br><img src="./screenshots/33.png">
+
+<br><br>Select the rank? <select class="input"><option value="-">-</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value=">5">>5</option></select><br><br><br><br>
+<br><br>DP#34: <a target="_blank" href="https://github.com/AppFlowy-IO/AppFlowy/commit/7cceafa432085689d64125182a748bbb4de4637d">Link</a>
+<h3>File: ast.rs</h2>
+<h3>Scope: 1-Fn</h3>
+<img src="./visualization/AppFlowy-IO_AppFlowy/7cceafa432085689d64125182a748bbb4de4637d/ast.rs_1-Fn.png">
+
+<br><br><img src="./screenshots/34.png">
+
+<br><br>Select the rank? <select class="input"><option value="-">-</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value=">5">>5</option></select><br><br><br><br>
+<br><br>DP#35: <a target="_blank" href="https://github.com/nushell/nushell/commit/328f7e92a0d8411bc8832b321d0fd644c0ab7130">Link</a>
+<h3>File: which_.rs</h2>
+<h3>Scope: 1-Fn</h3>
+<img src="./visualization/nushell_nushell/328f7e92a0d8411bc8832b321d0fd644c0ab7130/which_.rs_1-Fn.png">
+
+<br><br><img src="./screenshots/35.png">
+
+<br><br>Select the rank? <select class="input"><option value="-">-</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value=">5">>5</option></select><br><br><br><br>
+<br><br>DP#36: <a target="_blank" href="https://github.com/meilisearch/meilisearch/commit/36c7fd0cf18a2aa78e3943bf95499b353977322d">Link</a>
+<h3>File: setting.rs</h2>
+<h3>Scope: 10-Fn</h3>
+<img src="./visualization/meilisearch_meilisearch/36c7fd0cf18a2aa78e3943bf95499b353977322d/setting.rs_10-Fn.png">
+
+<br><br><img src="./screenshots/36.png">
+
+<br><br>Select the rank? <select class="input"><option value="-">-</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value=">5">>5</option></select><br><br><br><br>
+<br><br>DP#37: <a target="_blank" href="https://github.com/xi-editor/xi-editor/commit/bed5b4341460d2330b9249f10e62d1a5b4dadf56">Link</a>
+<h3>File: rpc.rs</h2>
+<h3>Scope: 2-Impl</h3>
+<img src="./visualization/xi-editor_xi-editor/bed5b4341460d2330b9249f10e62d1a5b4dadf56/rpc.rs_2-Impl.png">
+
+<br><br><img src="./screenshots/37.png">
+
+<br><br>Select the rank? <select class="input"><option value="-">-</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value=">5">>5</option></select><br><br><br><br>
+<br><br>DP#38: <a target="_blank" href="https://github.com/denoland/deno/commit/1cd95dd8b5046484ea79b1849e420d1c085d1e5b">Link</a>
+<h3>File: tty.rs</h2>
+<h3>Scope: 3-Fn</h3>
+<img src="./visualization/denoland_deno/1cd95dd8b5046484ea79b1849e420d1c085d1e5b/tty.rs_3-Fn.png">
+
+<br><br><img src="./screenshots/38.png">
+
+<br><br>Select the rank? <select class="input"><option value="-">-</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value=">5">>5</option></select><br><br><br><br>
+<br><br>DP#39: <a target="_blank" href="https://github.com/nushell/nushell/commit/6514a30b5d33526465e72af21caba9c9371b5b41">Link</a>
+<h3>File: md.rs</h2>
+<h3>Scope: 4-Fn</h3>
+<img src="./visualization/nushell_nushell/6514a30b5d33526465e72af21caba9c9371b5b41/md.rs_4-Fn.png">
+
+<br><br><img src="./screenshots/39.png">
+
+<br><br>Select the rank? <select class="input"><option value="-">-</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value=">5">>5</option></select><br><br><br><br>
+<br><br>DP#40: <a target="_blank" href="https://github.com/AppFlowy-IO/AppFlowy/commit/cfb589dda1c0b312097e3188f65b09118e20043e">Link</a>
+<h3>File: controller.rs</h2>
+<h3>Scope: 0-Impl</h3>
+<img src="./visualization/AppFlowy-IO_AppFlowy/cfb589dda1c0b312097e3188f65b09118e20043e/controller.rs_0-Impl.png">
+
+<br><br><img src="./screenshots/40.png">
+
+<br><br>Select the rank? <select class="input"><option value="-">-</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value=">5">>5</option></select><br><br><br><br>
+<br><br>DP#41: <a target="_blank" href="https://github.com/starship/starship/commit/56d475578ea508631275772127f49a6949fea6b0">Link</a>
+<h3>File: git_status.rs</h2>
+<h3>Scope: 23-Fn</h3>
+<img src="./visualization/starship_starship/56d475578ea508631275772127f49a6949fea6b0/git_status.rs_23-Fn.png">
+
+<br><br><img src="./screenshots/41.png">
+
+<br><br>Select the rank? <select class="input"><option value="-">-</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value=">5">>5</option></select><br><br><br><br>
+<br><br>DP#42: <a target="_blank" href="https://github.com/AppFlowy-IO/AppFlowy/commit/cfb589dda1c0b312097e3188f65b09118e20043e">Link</a>
+<h3>File: controller.rs</h2>
+<h3>Scope: 6-Fn</h3>
+<img src="./visualization/AppFlowy-IO_AppFlowy/cfb589dda1c0b312097e3188f65b09118e20043e/controller.rs_6-Fn.png">
+
+<br><br><img src="./screenshots/42.png">
+
+<br><br>Select the rank? <select class="input"><option value="-">-</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value=">5">>5</option></select><br><br><br><br>
+<br><br>DP#43: <a target="_blank" href="https://github.com/yewstack/yew/commit/e9de1652cf92b019447a912e99b9e45f0dbb176d">Link</a>
+<h3>File: vtag.rs</h2>
+<h3>Scope: 0-Impl</h3>
+<img src="./visualization/yewstack_yew/e9de1652cf92b019447a912e99b9e45f0dbb176d/vtag.rs_0-Impl.png">
+
+<br><br><img src="./screenshots/43.png">
+
+<br><br>Select the rank? <select class="input"><option value="-">-</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value=">5">>5</option></select><br><br><br><br>
+<br><br>DP#44: <a target="_blank" href="https://github.com/AppFlowy-IO/AppFlowy/commit/3abd5b953e9cbde32ebdd11a3137cdf96f40ee96">Link</a>
+<h3>File: workspace_deps.rs</h2>
+<h3>Scope: 1-Impl</h3>
+<img src="./visualization/AppFlowy-IO_AppFlowy/3abd5b953e9cbde32ebdd11a3137cdf96f40ee96/workspace_deps.rs_1-Impl.png">
+
+<br><br><img src="./screenshots/44.png">
+
+<br><br>Select the rank? <select class="input"><option value="-">-</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value=">5">>5</option></select><br><br><br><br>
+<br><br>DP#45: <a target="_blank" href="https://github.com/SergioBenitez/Rocket/commit/63a14525d86595a8033715e3bdcd2bf2581eecb1">Link</a>
+<h3>File: flash-lazy-removes-issue-466.rs</h2>
+<h3>Scope: 1-Fn</h3>
+<img src="./visualization/SergioBenitez_Rocket/63a14525d86595a8033715e3bdcd2bf2581eecb1/flash-lazy-removes-issue-466.rs_1-Fn.png">
+
+<br><br><img src="./screenshots/45.png">
+
+<br><br>Select the rank? <select class="input"><option value="-">-</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value=">5">>5</option></select><br><br><br><br>
+<br><br>DP#46: <a target="_blank" href="https://github.com/tauri-apps/tauri/commit/a1929c6dacccd00af4cdbcc4d29cfb98d8428f55">Link</a>
+<h3>File: build.rs</h2>
+<h3>Scope: 0-Fn</h3>
+<img src="./visualization/tauri-apps_tauri/a1929c6dacccd00af4cdbcc4d29cfb98d8428f55/build.rs_0-Fn.png">
+
+<br><br><img src="./screenshots/46.png">
+
+<br><br>Select the rank? <select class="input"><option value="-">-</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value=">5">>5</option></select><br><br><br><br>
+<br><br>DP#47: <a target="_blank" href="https://github.com/AppFlowy-IO/AppFlowy/commit/cfb589dda1c0b312097e3188f65b09118e20043e">Link</a>
+<h3>File: cache.rs</h2>
+<h3>Scope: 0-Impl</h3>
+<img src="./visualization/AppFlowy-IO_AppFlowy/cfb589dda1c0b312097e3188f65b09118e20043e/cache.rs_0-Impl.png">
+
+<br><br><img src="./screenshots/47.png">
+
+<br><br>Select the rank? <select class="input"><option value="-">-</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value=">5">>5</option></select><br><br><br><br>
+<br><br>DP#48: <a target="_blank" href="https://github.com/xi-editor/xi-editor/commit/fcfa6514046af28a797d7146ef0bbbca8e762ddd">Link</a>
+<h3>File: main.rs</h2>
+<h3>Scope: 2-Fn</h3>
+<img src="./visualization/xi-editor_xi-editor/fcfa6514046af28a797d7146ef0bbbca8e762ddd/main.rs_2-Fn.png">
+
+<br><br><img src="./screenshots/48.png">
+
+<br><br>Select the rank? <select class="input"><option value="-">-</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value=">5">>5</option></select><br><br><br><br>
+<br><br>DP#49: <a target="_blank" href="https://github.com/swc-project/swc/commit/6a97c7bef8a1f846bfe34678fd0714b8fdcb56a5">Link</a>
+<h3>File: unsafes.rs</h2>
+<h3>Scope: 0-Impl</h3>
+<img src="./visualization/swc-project_swc/6a97c7bef8a1f846bfe34678fd0714b8fdcb56a5/unsafes.rs_0-Impl.png">
+
+<br><br><img src="./screenshots/49.png">
+
+<br><br>Select the rank? <select class="input"><option value="-">-</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value=">5">>5</option></select><br><br><br><br>
+<br><br>DP#50: <a target="_blank" href="https://github.com/yewstack/yew/commit/7e2542cbf83fb4ed16709200189eddd2e61cd0d0">Link</a>
+<h3>File: main.rs</h2>
+<h3>Scope: 0-Fn</h3>
+<img src="./visualization/yewstack_yew/7e2542cbf83fb4ed16709200189eddd2e61cd0d0/main.rs_0-Fn.png">
+
+<br><br><img src="./screenshots/50.png">
+
+<br><br>Select the rank? <select class="input"><option value="-">-</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value=">5">>5</option></select><br><br><br><br>
+
+<input type="submit" value="Copy Results" onclick="submit();"/>
+<br><br>
+</body>
+</html>

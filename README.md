@@ -1,2 +1,1 @@
-# rust_bug_patterns_replication_package
-Rust bug patterns replication pattern
+Empirical research for finding the most prevalent bug patterns in Rust programs.

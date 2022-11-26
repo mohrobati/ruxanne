@@ -1,0 +1,455 @@
+Created by PLY version 3.11 (http://www.dabeaz.com/ply)
+
+Grammar
+
+Rule 0     S' -> program
+Rule 1     program -> arr_list_root
+Rule 2     arr_list_root -> ID LSB obj_list RSB
+Rule 3     arr_list_root -> LSB obj_list RSB
+Rule 4     obj_list_root -> ID LRB obj_list RRB
+Rule 5     obj_list -> obj_list obj_element COMMA
+Rule 6     obj_list -> <empty>
+Rule 7     obj_list -> LRB obj_list RRB COMMA
+Rule 8     obj_element -> atomic
+Rule 9     dic_list_root -> ID LCB dic_list RCB
+Rule 10    dic_list -> dic_list dic_element COMMA
+Rule 11    dic_list -> <empty>
+Rule 12    dic_element -> ID COLON dic_value
+Rule 13    dic_value -> atomic
+Rule 14    dic_value -> STRING
+Rule 15    dic_value -> arr_list_root
+Rule 16    dic_value -> obj_list_root
+Rule 17    dic_value -> dic_list_root
+Rule 18    obj_element -> arr_list_root
+Rule 19    obj_element -> obj_list_root
+Rule 20    obj_element -> dic_list_root
+Rule 21    atomic -> ID
+
+Terminals, with rules where they appear
+
+COLON                : 12
+COMMA                : 5 7 10
+ID                   : 2 4 9 12 21
+LCB                  : 9
+LRB                  : 4 7
+LSB                  : 2 3
+RCB                  : 9
+RRB                  : 4 7
+RSB                  : 2 3
+STRING               : 14
+error                : 
+
+Nonterminals, with rules where they appear
+
+arr_list_root        : 1 15 18
+atomic               : 8 13
+dic_element          : 10
+dic_list             : 9 10
+dic_list_root        : 17 20
+dic_value            : 12
+obj_element          : 5
+obj_list             : 2 3 4 5 7
+obj_list_root        : 16 19
+program              : 0
+
+Parsing method: LALR
+
+state 0
+
+    (0) S' -> . program
+    (1) program -> . arr_list_root
+    (2) arr_list_root -> . ID LSB obj_list RSB
+    (3) arr_list_root -> . LSB obj_list RSB
+
+    ID              shift and go to state 3
+    LSB             shift and go to state 4
+
+    program                        shift and go to state 1
+    arr_list_root                  shift and go to state 2
+
+state 1
+
+    (0) S' -> program .
+
+
+
+state 2
+
+    (1) program -> arr_list_root .
+
+    $end            reduce using rule 1 (program -> arr_list_root .)
+
+
+state 3
+
+    (2) arr_list_root -> ID . LSB obj_list RSB
+
+    LSB             shift and go to state 5
+
+
+state 4
+
+    (3) arr_list_root -> LSB . obj_list RSB
+    (5) obj_list -> . obj_list obj_element COMMA
+    (6) obj_list -> .
+    (7) obj_list -> . LRB obj_list RRB COMMA
+
+    RSB             reduce using rule 6 (obj_list -> .)
+    ID              reduce using rule 6 (obj_list -> .)
+    LSB             reduce using rule 6 (obj_list -> .)
+    LRB             shift and go to state 7
+
+    obj_list                       shift and go to state 6
+
+state 5
+
+    (2) arr_list_root -> ID LSB . obj_list RSB
+    (5) obj_list -> . obj_list obj_element COMMA
+    (6) obj_list -> .
+    (7) obj_list -> . LRB obj_list RRB COMMA
+
+    RSB             reduce using rule 6 (obj_list -> .)
+    ID              reduce using rule 6 (obj_list -> .)
+    LSB             reduce using rule 6 (obj_list -> .)
+    LRB             shift and go to state 7
+
+    obj_list                       shift and go to state 8
+
+state 6
+
+    (3) arr_list_root -> LSB obj_list . RSB
+    (5) obj_list -> obj_list . obj_element COMMA
+    (8) obj_element -> . atomic
+    (18) obj_element -> . arr_list_root
+    (19) obj_element -> . obj_list_root
+    (20) obj_element -> . dic_list_root
+    (21) atomic -> . ID
+    (2) arr_list_root -> . ID LSB obj_list RSB
+    (3) arr_list_root -> . LSB obj_list RSB
+    (4) obj_list_root -> . ID LRB obj_list RRB
+    (9) dic_list_root -> . ID LCB dic_list RCB
+
+    RSB             shift and go to state 9
+    ID              shift and go to state 15
+    LSB             shift and go to state 4
+
+    obj_element                    shift and go to state 10
+    atomic                         shift and go to state 11
+    arr_list_root                  shift and go to state 12
+    obj_list_root                  shift and go to state 13
+    dic_list_root                  shift and go to state 14
+
+state 7
+
+    (7) obj_list -> LRB . obj_list RRB COMMA
+    (5) obj_list -> . obj_list obj_element COMMA
+    (6) obj_list -> .
+    (7) obj_list -> . LRB obj_list RRB COMMA
+
+    RRB             reduce using rule 6 (obj_list -> .)
+    ID              reduce using rule 6 (obj_list -> .)
+    LSB             reduce using rule 6 (obj_list -> .)
+    LRB             shift and go to state 7
+
+    obj_list                       shift and go to state 16
+
+state 8
+
+    (2) arr_list_root -> ID LSB obj_list . RSB
+    (5) obj_list -> obj_list . obj_element COMMA
+    (8) obj_element -> . atomic
+    (18) obj_element -> . arr_list_root
+    (19) obj_element -> . obj_list_root
+    (20) obj_element -> . dic_list_root
+    (21) atomic -> . ID
+    (2) arr_list_root -> . ID LSB obj_list RSB
+    (3) arr_list_root -> . LSB obj_list RSB
+    (4) obj_list_root -> . ID LRB obj_list RRB
+    (9) dic_list_root -> . ID LCB dic_list RCB
+
+    RSB             shift and go to state 17
+    ID              shift and go to state 15
+    LSB             shift and go to state 4
+
+    obj_element                    shift and go to state 10
+    atomic                         shift and go to state 11
+    arr_list_root                  shift and go to state 12
+    obj_list_root                  shift and go to state 13
+    dic_list_root                  shift and go to state 14
+
+state 9
+
+    (3) arr_list_root -> LSB obj_list RSB .
+
+    $end            reduce using rule 3 (arr_list_root -> LSB obj_list RSB .)
+    COMMA           reduce using rule 3 (arr_list_root -> LSB obj_list RSB .)
+
+
+state 10
+
+    (5) obj_list -> obj_list obj_element . COMMA
+
+    COMMA           shift and go to state 18
+
+
+state 11
+
+    (8) obj_element -> atomic .
+
+    COMMA           reduce using rule 8 (obj_element -> atomic .)
+
+
+state 12
+
+    (18) obj_element -> arr_list_root .
+
+    COMMA           reduce using rule 18 (obj_element -> arr_list_root .)
+
+
+state 13
+
+    (19) obj_element -> obj_list_root .
+
+    COMMA           reduce using rule 19 (obj_element -> obj_list_root .)
+
+
+state 14
+
+    (20) obj_element -> dic_list_root .
+
+    COMMA           reduce using rule 20 (obj_element -> dic_list_root .)
+
+
+state 15
+
+    (21) atomic -> ID .
+    (2) arr_list_root -> ID . LSB obj_list RSB
+    (4) obj_list_root -> ID . LRB obj_list RRB
+    (9) dic_list_root -> ID . LCB dic_list RCB
+
+    COMMA           reduce using rule 21 (atomic -> ID .)
+    LSB             shift and go to state 5
+    LRB             shift and go to state 19
+    LCB             shift and go to state 20
+
+
+state 16
+
+    (7) obj_list -> LRB obj_list . RRB COMMA
+    (5) obj_list -> obj_list . obj_element COMMA
+    (8) obj_element -> . atomic
+    (18) obj_element -> . arr_list_root
+    (19) obj_element -> . obj_list_root
+    (20) obj_element -> . dic_list_root
+    (21) atomic -> . ID
+    (2) arr_list_root -> . ID LSB obj_list RSB
+    (3) arr_list_root -> . LSB obj_list RSB
+    (4) obj_list_root -> . ID LRB obj_list RRB
+    (9) dic_list_root -> . ID LCB dic_list RCB
+
+    RRB             shift and go to state 21
+    ID              shift and go to state 15
+    LSB             shift and go to state 4
+
+    obj_element                    shift and go to state 10
+    atomic                         shift and go to state 11
+    arr_list_root                  shift and go to state 12
+    obj_list_root                  shift and go to state 13
+    dic_list_root                  shift and go to state 14
+
+state 17
+
+    (2) arr_list_root -> ID LSB obj_list RSB .
+
+    $end            reduce using rule 2 (arr_list_root -> ID LSB obj_list RSB .)
+    COMMA           reduce using rule 2 (arr_list_root -> ID LSB obj_list RSB .)
+
+
+state 18
+
+    (5) obj_list -> obj_list obj_element COMMA .
+
+    RSB             reduce using rule 5 (obj_list -> obj_list obj_element COMMA .)
+    ID              reduce using rule 5 (obj_list -> obj_list obj_element COMMA .)
+    LSB             reduce using rule 5 (obj_list -> obj_list obj_element COMMA .)
+    RRB             reduce using rule 5 (obj_list -> obj_list obj_element COMMA .)
+
+
+state 19
+
+    (4) obj_list_root -> ID LRB . obj_list RRB
+    (5) obj_list -> . obj_list obj_element COMMA
+    (6) obj_list -> .
+    (7) obj_list -> . LRB obj_list RRB COMMA
+
+    RRB             reduce using rule 6 (obj_list -> .)
+    ID              reduce using rule 6 (obj_list -> .)
+    LSB             reduce using rule 6 (obj_list -> .)
+    LRB             shift and go to state 7
+
+    obj_list                       shift and go to state 22
+
+state 20
+
+    (9) dic_list_root -> ID LCB . dic_list RCB
+    (10) dic_list -> . dic_list dic_element COMMA
+    (11) dic_list -> .
+
+    RCB             reduce using rule 11 (dic_list -> .)
+    ID              reduce using rule 11 (dic_list -> .)
+
+    dic_list                       shift and go to state 23
+
+state 21
+
+    (7) obj_list -> LRB obj_list RRB . COMMA
+
+    COMMA           shift and go to state 24
+
+
+state 22
+
+    (4) obj_list_root -> ID LRB obj_list . RRB
+    (5) obj_list -> obj_list . obj_element COMMA
+    (8) obj_element -> . atomic
+    (18) obj_element -> . arr_list_root
+    (19) obj_element -> . obj_list_root
+    (20) obj_element -> . dic_list_root
+    (21) atomic -> . ID
+    (2) arr_list_root -> . ID LSB obj_list RSB
+    (3) arr_list_root -> . LSB obj_list RSB
+    (4) obj_list_root -> . ID LRB obj_list RRB
+    (9) dic_list_root -> . ID LCB dic_list RCB
+
+    RRB             shift and go to state 25
+    ID              shift and go to state 15
+    LSB             shift and go to state 4
+
+    obj_element                    shift and go to state 10
+    atomic                         shift and go to state 11
+    arr_list_root                  shift and go to state 12
+    obj_list_root                  shift and go to state 13
+    dic_list_root                  shift and go to state 14
+
+state 23
+
+    (9) dic_list_root -> ID LCB dic_list . RCB
+    (10) dic_list -> dic_list . dic_element COMMA
+    (12) dic_element -> . ID COLON dic_value
+
+    RCB             shift and go to state 27
+    ID              shift and go to state 26
+
+    dic_element                    shift and go to state 28
+
+state 24
+
+    (7) obj_list -> LRB obj_list RRB COMMA .
+
+    RSB             reduce using rule 7 (obj_list -> LRB obj_list RRB COMMA .)
+    ID              reduce using rule 7 (obj_list -> LRB obj_list RRB COMMA .)
+    LSB             reduce using rule 7 (obj_list -> LRB obj_list RRB COMMA .)
+    RRB             reduce using rule 7 (obj_list -> LRB obj_list RRB COMMA .)
+
+
+state 25
+
+    (4) obj_list_root -> ID LRB obj_list RRB .
+
+    COMMA           reduce using rule 4 (obj_list_root -> ID LRB obj_list RRB .)
+
+
+state 26
+
+    (12) dic_element -> ID . COLON dic_value
+
+    COLON           shift and go to state 29
+
+
+state 27
+
+    (9) dic_list_root -> ID LCB dic_list RCB .
+
+    COMMA           reduce using rule 9 (dic_list_root -> ID LCB dic_list RCB .)
+
+
+state 28
+
+    (10) dic_list -> dic_list dic_element . COMMA
+
+    COMMA           shift and go to state 30
+
+
+state 29
+
+    (12) dic_element -> ID COLON . dic_value
+    (13) dic_value -> . atomic
+    (14) dic_value -> . STRING
+    (15) dic_value -> . arr_list_root
+    (16) dic_value -> . obj_list_root
+    (17) dic_value -> . dic_list_root
+    (21) atomic -> . ID
+    (2) arr_list_root -> . ID LSB obj_list RSB
+    (3) arr_list_root -> . LSB obj_list RSB
+    (4) obj_list_root -> . ID LRB obj_list RRB
+    (9) dic_list_root -> . ID LCB dic_list RCB
+
+    STRING          shift and go to state 33
+    ID              shift and go to state 15
+    LSB             shift and go to state 4
+
+    dic_value                      shift and go to state 31
+    atomic                         shift and go to state 32
+    arr_list_root                  shift and go to state 34
+    obj_list_root                  shift and go to state 35
+    dic_list_root                  shift and go to state 36
+
+state 30
+
+    (10) dic_list -> dic_list dic_element COMMA .
+
+    RCB             reduce using rule 10 (dic_list -> dic_list dic_element COMMA .)
+    ID              reduce using rule 10 (dic_list -> dic_list dic_element COMMA .)
+
+
+state 31
+
+    (12) dic_element -> ID COLON dic_value .
+
+    COMMA           reduce using rule 12 (dic_element -> ID COLON dic_value .)
+
+
+state 32
+
+    (13) dic_value -> atomic .
+
+    COMMA           reduce using rule 13 (dic_value -> atomic .)
+
+
+state 33
+
+    (14) dic_value -> STRING .
+
+    COMMA           reduce using rule 14 (dic_value -> STRING .)
+
+
+state 34
+
+    (15) dic_value -> arr_list_root .
+
+    COMMA           reduce using rule 15 (dic_value -> arr_list_root .)
+
+
+state 35
+
+    (16) dic_value -> obj_list_root .
+
+    COMMA           reduce using rule 16 (dic_value -> obj_list_root .)
+
+
+state 36
+
+    (17) dic_value -> dic_list_root .
+
+    COMMA           reduce using rule 17 (dic_value -> dic_list_root .)
+

@@ -1,0 +1,22 @@
+Type,Subgroup,Group ID,Description,# Instances,# Projects
+General,Attributes,G.attr.struct,Adding Attributes to Structs,172,16
+,,G.attr.struct.field,Adding Attributes to Struct Fields,62,16
+,Struct,G.struct.field,Adding/Removing a Struct field,179,17
+,,G.struct.field.pub,Adding/Removing pub to/from Struct field,23,12
+,Option,G.option,Changing field type T to Option<T>,22,12
+,Types,G.type.field,Changing a Struct field type,72,14
+,,G.type.generic,Changing a generic type,46,14
+,,G.type.enum.variant,Change in enum variant value type,39,12
+,,G.type.tuple,Changing the type inside a tuple,6,6
+,Traits,G.trait.bound,TraitBound Change,6,5
+,Match,G.match.pattern,Change in pattern,41,12
+,,G.match.code,Change in arm code,8,5
+,,,,,
+Borrow Checker,Ref and Deref,BC.ref.add,Adding &,17,7
+,,BC.deref.to_string.add,Adding *,4,3
+,Mut,BC.mut.add,Adding mut,11,6
+,,BC.mut.drop,Removing mut,42,15
+,Vector,BC.vec.slice,&Vec<> → &[],8,6
+,Lifetime,BC.lifetime.static,Dropping static lifetime,8,6
+,Clone,BC.clone.drop,Dropping clone(),83,10
+,,BC.clone.ref,Dropping clone() and adding reference,4,3

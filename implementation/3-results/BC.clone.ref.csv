@@ -1,0 +1,5 @@
+Commit,File,Scope
+https://github.com/tauri-apps/tauri/commit/e251e1b0991d26ab10aea33cfb228f3e7f0f85b5,info.rs,8-Fn
+https://github.com/tauri-apps/tauri/commit/a280ee90af0749ce18d6d0b00939b06473717bc9,lib.rs,23-Impl
+https://github.com/meilisearch/meilisearch/commit/a5b0e468eef3a12dcf6d95da11c1443523206fce,serializer.rs,0-Fn
+https://github.com/nushell/nushell/commit/4be88ff572f631df0f8b571e85c60d30eb9f248c,parse_command.rs,2-Impl

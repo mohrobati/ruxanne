@@ -1,0 +1,7 @@
+Commit,File,Scope
+https://github.com/alacritty/alacritty/commit/2434547fce7bf47a848f088f2600e8ba7027a62b,display.rs,0-Struct
+https://github.com/denoland/deno/commit/87e513ffc5d9c14ac4af6a893b9e862c55108bea,fs.rs,25-Struct
+https://github.com/firecracker-microvm/firecracker/commit/985af3f66e4bbb2382aaf1a0526d9a756a937994,mmio.rs,1-Struct
+https://github.com/meilisearch/meilisearch/commit/4626c77eac1b6fa4811b7079bfb8f768d8bdb96b,update.rs,0-Struct
+https://github.com/nushell/nushell/commit/ad395944efa0a93cef0efd2aa22d90718004b4df,run_alias.rs,0-Struct
+https://github.com/xi-editor/xi-editor/commit/569f764936de978719365989ba4b95577a974e46,tabs.rs,0-Struct
