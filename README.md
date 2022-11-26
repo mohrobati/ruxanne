@@ -1,3 +1,5 @@
+<h1>Ruxanne: A Study of Common Bug Fix Patterns in Rust</h1>
+
 This is the supplementary material for Ruxanne, a big fix pattern miner for Rust as described in the paper "A Study of Common Bug Fix Patterns in Rust".
 
 It contains the modules for parsing, code embedding, mining and clustering, as well as the final results to help others understand, replicate, and extend our work. Open an issue or submit a PR to help us improve Ruxanne.
