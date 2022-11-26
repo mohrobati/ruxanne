@@ -5,15 +5,47 @@ It contains the modules for parsing, code embedding, mining and clustering, as w
 
 <h1>Installation</h1>
 <ul>
+<li>Install cargo---1.64.0-nightly (a5e08c470 2022-06-23)</li>
+https://doc.rust-lang.org/cargo/getting-started/installation.html
 <li>Install Python packages in requirements.txt</li>
 
 ```
+git clone https://github.com/mohrobati/ruxanne.git
+cd ruxanne/
+pip install --upgrade pip
 pip install -r requirements.txt
 ```
-<li>Install cargo---1.64.0-nightly (a5e08c470 2022-06-23)</li>
-https://doc.rust-lang.org/cargo/getting-started/installation.html
+
 </ul>
 
+<h1>Test</h1>
+
+```
+cd implementation/1-mining
+python3 test.py
+```
+You should get this output after few seconds:
+
+```
+...
+--alacritty/alacritty/commit/90552e3e7f8f085919a39435a8a68b3a2f633e54 mined successfully--
+======
+
+
+Mining Finished!
+```
+
+Now you can check out the mined datapoints:
+
+```
+vim datapoints.csv
+```
+Or the logs:
+
+```
+cd __logs__
+ls
+```
 <h1>Files/Directory Structure</h1>
 
 <ul>
