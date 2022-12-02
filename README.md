@@ -18,6 +18,16 @@ pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
+Versions in our environment: <br>
+PyDriller==2.2 <br>
+dictdiffer==0.9.0 <br>
+ply==3.11 <br>
+numpy==1.23.5 <br>
+sklearn==0.0.post1 <br>
+pandas==1.5.2 <br>
+matplotlib==3.6.2 <br>
+scipy==1.9.3 <br>
+packcircles==0.14 <br>
 </ul>
 
 <h1>Test</h1>
